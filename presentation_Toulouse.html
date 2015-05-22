@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jan Boone" />
+  <title>Capitation and provider choice</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="reveal.js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
+  <link rel="stylesheet" media="print" href="reveal.js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+    <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">MathJax.Hub.Queue(["Typeset",MathJax.Hub]);</script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">Capitation and provider choice</h1>
+    <h2 class="author">Jan Boone</h2>
+    <h3 class="date">Tilec, Tilburg University</h3>
+</section>
+<section id="TOC">
+<ul>
+<li><a href="#/introduction">Introduction</a></li>
+<li><a href="#/model">Model</a></li>
+<li><a href="#/public-contracts">Public contracts</a></li>
+<li><a href="#/private-contracts-1">Private contracts</a></li>
+<li><a href="#/insurance-market">Insurance market</a></li>
+<li><a href="#/policy-implications">Policy implications</a></li>
+</ul>
+</section>
+
+<section><section id="introduction" class="titleslide slide level1"><h1><a href="#/introduction">Introduction</a></h1></section><section id="motivation" class="slide level2">
+<h1><a href="#/motivation">motivation</a></h1>
+<ul>
+<li><p>bigger provider networks lead to higher health care expenditure</p>
+<ul>
+<li>cross section studies</li>
+<li>AWP laws</li>
+<li>US: fee-for-service; narrow networks; broader networks</li>
+</ul></li>
+<li><p>both price effect and utilization effect of selective contracting/managed care</p>
+<ul>
+<li>Cutler et al (2000): price</li>
+<li>papers by Zwanziger and co-authors (1988, 1994, 1996): utilization and cost</li>
+<li>Chernew et al. (2008): utilization</li>
+<li>Chernew and Newhouse (2011): overview of effects on expenditure and costs</li>
+</ul></li>
+<li><p>we focus on the effect of network size on utilization and costs</p></li>
+</ul>
+</section><section id="policy-problem" class="slide level2">
+<h1><a href="#/policy-problem">policy problem</a></h1>
+<ul>
+<li>is it a problem that bigger networks lead to higher costs?</li>
+<li>why should more choice lead to higher utilization?</li>
+<li>people worry that narrow network leads to under-treatment (NYT, July 2014; LA Times Sept. 2013)</li>
+</ul>
+</section><section id="private-contracts" class="slide level2">
+<h1><a href="#/private-contracts">private contracts</a></h1>
+<ul>
+<li>with public contracts there is no effect of network size on utilization and costs</li>
+<li>cannot address concerns on under-treatment</li>
+<li><p>contracts are private in reality</p>
+<ul>
+<li>confidentiality clauses (Muir et al., 2013)</li>
+<li>only insurer and provider know the terms</li>
+<li>other insurers and providers do not</li>
+<li>consumers do not</li>
+</ul></li>
+</ul>
+</section><section id="questions" class="slide level2">
+<h1><a href="#/questions">questions</a></h1>
+<ul>
+<li>capitation fee as supply side cost sharing
+<ul>
+<li>how is this combined with provider choice?</li>
+<li>why is demand side cost sharing used?</li>
+</ul></li>
+</ul>
+</section><section id="literature" class="slide level2">
+<h1><a href="#/literature">literature</a></h1>
+<ul>
+<li><p>health economics literature on selective contracting and managed care</p></li>
+<li>papers by McGuire and co-authors (1993, 1997, 2002) on physician agency
+<ul>
+<li>with public contracts demand and supply side cost sharing separated</li>
+<li>optimal to have no demand side cost sharing</li>
+</ul></li>
+<li>I.O. literature on private contracts
+<ul>
+<li>Hart and Tirole (1990): upstream monopolist with two downstream firms cannot earn monopoly profit with two part tariff</li>
+<li><span class="math">\(p&gt;c\)</span>: oversupply because downstream firms expect U to oversell to competitor</li>
+<li>in our case: <span class="math">\(p&lt;c\)</span>: provider expects too many patients</li>
+</ul></li>
+</ul>
+</section><section id="main-results" class="slide level2">
+<h1><a href="#/main-results">main results</a></h1>
+<ul>
+<li>with private contracts, supply side cost sharing decreases in network size</li>
+<li>strategic effect: given capitation fee, insurer sends too many patients to provider with lowest <span class="math">\(p\)</span></li>
+<li>needs to be compensated by higher capitation</li>
+<li>optimal network size trades off treatment efficiency against provider profits</li>
+<li>demand side cost sharing to reduce over-treatment</li>
+</ul>
+</section></section>
+<section><section id="model" class="titleslide slide level1"><h1><a href="#/model">Model</a></h1></section><section id="insurers" class="slide level2">
+<h1><a href="#/insurers">insurers</a></h1>
+<ul>
+<li>risk neutral</li>
+<li>risk averse consumers (mass 1)</li>
+<li>premium <span class="math">\(\sigma\)</span></li>
+<li>co-payment <span class="math">\(\gamma\)</span> in case of treatment</li>
+<li>network size <span class="math">\(n\)</span> of homogeneous providers</li>
+<li>fee-for-service <span class="math">\(p \geq 0\)</span>, capitation <span class="math">\(t\)</span></li>
+<li>no other cost of insurance</li>
+<li>perfect competition</li>
+</ul>
+</section><section id="providers" class="slide level2">
+<h1><a href="#/providers">providers</a></h1>
+<ul>
+<li>homogeneous</li>
+<li>risk neutral</li>
+<li><span class="math">\(c\)</span> cost of treatment</li>
+<li><span class="math">\(v \in [0,\bar v]\)</span> value of treatment, <span class="math">\(F\)</span></li>
+<li><span class="math">\(v\)</span> is observed by provider, not by insurer</li>
+<li>efficiency: treat iff <span class="math">\(v \geq c\)</span></li>
+</ul>
+</section><section id="consumers" class="slide level2">
+<h1><a href="#/consumers">consumers</a></h1>
+<ul>
+<li>same exogenous probability <span class="math">\(\theta\)</span> that treatment is needed</li>
+<li>copay <span class="math">\(\gamma &gt;0\)</span> inefficient due to risk aversion</li>
+<li><p>gets treatment iff <span class="math">\(v \geq v(p,\gamma)\)</span></p>
+<ul>
+<li>efficiency: <span class="math">\(v(p,\gamma) = c\)</span></li>
+<li><span class="math">\(v(p,\gamma) &gt; c\)</span>: under-treatment</li>
+<li>number of treatments <span class="math">\(H(p,\gamma) = \theta (1-F(v(p,\gamma)))\)</span></li>
+<li>with <span class="math">\(H_p \geq 0, H_{\gamma} \leq 0\)</span></li>
+</ul></li>
+</ul>
+</section></section>
+<section><section id="public-contracts" class="titleslide slide level1"><h1><a href="#/public-contracts">Public contracts</a></h1></section><section id="efficiency" class="slide level2">
+<h1><a href="#/efficiency">efficiency</a></h1>
+<ul>
+<li>contract <span class="math">\(n\)</span> providers</li>
+<li>fee-for-service: <span class="math">\(p^*\)</span> with <span class="math">\(v(p^*,0) = c\)</span></li>
+<li>assume <span class="math">\(p^*&lt;c\)</span></li>
+<li>capitation: <span class="math">\(t = H(p^*,0)(c-p^*)/n\)</span></li>
+<li>network size has no effect on costs/utilization</li>
+<li>can be an effect on distribution of rents via <span class="math">\(t\)</span></li>
+</ul>
+</section><section id="other-effects" class="slide level2">
+<h1><a href="#/other-effects">other effects</a></h1>
+<ul>
+<li>threat to exclude</li>
+<li>shifting volume</li>
+<li>taste for variety</li>
+<li>heterogeneous providers or agents</li>
+<li>risk averse providers</li>
+</ul>
+</section></section>
+<section><section id="private-contracts-1" class="titleslide slide level1"><h1><a href="#/private-contracts-1">Private contracts</a></h1></section><section id="truthful-revelation" class="slide level2">
+<h1><a href="#/truthful-revelation">truthful revelation</a></h1>
+<ul>
+<li>insurer can implicitly guide (some) patients to providers</li>
+<li>send patients (first) to provider <span class="math">\(i\)</span> with lowest <span class="math">\(p_i\)</span></li>
+<li><p>different from explicit/contractible steering</p>
+<ul>
+<li>exclude provider from network</li>
+<li>vary <span class="math">\(\gamma_i\)</span> with provider <span class="math">\(P_i\)</span></li>
+</ul></li>
+<li><p>even without steering:</p>
+<ul>
+<li>number of patients treated by <span class="math">\(P_i\)</span> depends on prices of other providers</li>
+<li>patients not treated by <span class="math">\(P_j\)</span> shop around hoping that <span class="math">\(v(p_i,\gamma) &lt; v &lt; v(p_j,\gamma)\)</span></li>
+</ul></li>
+</ul>
+</section><section id="capitation" class="slide level2">
+<h1><a href="#/capitation">capitation</a></h1>
+<ul>
+<li>how many patients can <span class="math">\(P_i\)</span> expect?</li>
+<li>insurer tells <span class="math">\(P_i\)</span> that <span class="math">\(P_j\)</span> has contract with <span class="math">\(p_j = p_i - \varepsilon\)</span></li>
+<li><span class="math">\(P_i\)</span> can expect to treat only <span class="math">\(\hat x_i = H(p_i,\gamma) - H(p_i - \varepsilon,\gamma)\)</span> patients</li>
+<li><span class="math">\(t_i\)</span> close to 0</li>
+<li>set of contracts <span class="math">\(p,t\)</span> where <span class="math">\(x_i\)</span> is truthfully revealed:</li>
+</ul>
+<p><span class="math">\[
+A_{\gamma,n} = \{ (p,\hat x (c-p)) |\hat x \geq
+x\}
+\]</span></p>
+</section><section id="proposition" class="slide level2">
+<h1><a href="#/proposition">proposition</a></h1>
+<ul>
+<li>for each <span class="math">\((p,t) \in A_{\gamma,n}\)</span>, we have <span class="math">\(t \geq H(p,\gamma)(c-p)\)</span>
+<ul>
+<li>each provider gets <span class="math">\(t\)</span> as if she has lowest <span class="math">\(p\)</span></li>
+<li>any lower <span class="math">\(t\)</span> is not incentive compatible and rejected by providers</li>
+<li>intuition: provider <span class="math">\(P_i\)</span> does not believe insurer's claim that there is <span class="math">\(p_j &lt; p_i\)</span></li>
+</ul></li>
+</ul>
+</section><section id="profits" class="slide level2">
+<h1><a href="#/profits">profits</a></h1>
+<ul>
+<li>if two providers get offered the same <span class="math">\(p&lt;c\)</span>, insurer pays <span class="math">\(t=H(p,\gamma)(c-p)\)</span> to each</li>
+<li>providers make a profit</li>
+<li>reduce provider profits by raising fee-for-service <span class="math">\(p\)</span> and reduce capitation <span class="math">\(t\)</span></li>
+<li><span class="math">\(p=c\)</span> implies <span class="math">\(t=0\)</span>: no provider profits</li>
+<li>hence bigger networks lead to less supply side cost sharing</li>
+<li>and thus to higher health care utilization and costs</li>
+</ul>
+</section><section id="intuition" class="slide level2">
+<h1><a href="#/intuition">intuition</a></h1>
+<ul>
+<li>as network size <span class="math">\(n\)</span> increases, supply side cost sharing becomes more expensive</li>
+<li><p>with <span class="math">\(n=1\)</span>, reduce treatment costs by setting <span class="math">\(p=0,t=H(0,\gamma)c\)</span></p>
+<ul>
+<li>insured cannot observe <span class="math">\(p\)</span></li>
+<li>premium does not depend on <span class="math">\(p\)</span></li>
+</ul></li>
+<li>with <span class="math">\(n \geq 2\)</span>, this becomes too expensive, as each provider requires <span class="math">\(t=H(0,\gamma)c\)</span></li>
+<li>raise <span class="math">\(p\)</span> to reduce <span class="math">\(t\)</span></li>
+<li>bigger network leads to more utilization and higher cost</li>
+<li>for <span class="math">\(n\)</span> big enough, <span class="math">\(p=c\)</span>: indemnity insurance, all providers contracted</li>
+<li><p>size of the network signals probability of treatment</p>
+<ul>
+<li>broader networks are more generous</li>
+<li>premium depends on <span class="math">\(n\)</span></li>
+</ul></li>
+</ul>
+</section><section id="results" class="slide level2">
+<h1><a href="#/results">results</a></h1>
+<ul>
+<li>costs <span class="math">\(C(n,\gamma)\)</span> increase in <span class="math">\(n\)</span></li>
+<li>decrease in <span class="math">\(\gamma\)</span></li>
+<li>consumer is interested in highest price <span class="math">\(p(n,\gamma)\)</span></li>
+<li>determines probability that insured is treated (at all)</li>
+<li>probability of treatment increases with <span class="math">\(n\)</span></li>
+</ul>
+</section></section>
+<section><section id="insurance-market" class="titleslide slide level1"><h1><a href="#/insurance-market">Insurance market</a></h1></section><section id="value-of-insurance" class="slide level2">
+<h1><a href="#/value-of-insurance">value of insurance</a></h1>
+<ul>
+<li>Bertrand competition: <span class="math">\(\sigma = C(n,\gamma)\)</span></li>
+<li>consumer does not know <span class="math">\(p_i\)</span></li>
+<li>but does understand that bigger network leads to higher <span class="math">\(p(n,\gamma)\)</span></li>
+<li>values insurance at</li>
+</ul>
+<p><span class="math">\[
+V^i = \theta \int_{v(p(n,\gamma),\gamma)} (v-\gamma)f(v) dv - C(n,\gamma)-\theta
+   \delta (p(n,\gamma),\gamma)
+\]</span></p>
+</section><section id="efficiency-1" class="slide level2">
+<h1><a href="#/efficiency-1">efficiency</a></h1>
+<ul>
+<li>due to competition, insurers choose <span class="math">\(n,\gamma\)</span> to maximize <span class="math">\(V^i\)</span></li>
+<li>network size is trade off between number of treatments and providers' profits</li>
+<li><p>inverse U between <span class="math">\(n\)</span> and profits</p>
+<ul>
+<li>zero profits with <span class="math">\(n=1\)</span></li>
+<li>zero profits with <span class="math">\(n\)</span> high enough that <span class="math">\(p=c\)</span></li>
+</ul></li>
+<li>if optimal <span class="math">\(n\)</span> implies over-treatment, <span class="math">\(\gamma &gt; 0\)</span> can be optimal</li>
+<li><p>unlike public contracts, here both demand and supply side cost sharing needed</p></li>
+</ul>
+</section></section>
+<section><section id="policy-implications" class="titleslide slide level1"><h1><a href="#/policy-implications">Policy implications</a></h1></section><section id="awp-laws" class="slide level2">
+<h1><a href="#/awp-laws">AWP laws</a></h1>
+<ul>
+<li>make it harder to exclude provider from the network</li>
+<li>with private contracts, providers have positive profits; want to be part of the network</li>
+<li>if AWP laws lead to higher <span class="math">\(n\)</span> they lead to higher health care utilization and costs</li>
+<li>if the insurance market is perfectly competitive, AWP laws tend to reduce welfare</li>
+<li>if there is no perfect competition, narrow networks can lead to low welfare and undertreatment</li>
+</ul>
+<!-- pandoc -s --mathjax --slide-level 2 --toc --toc-depth=1 -t revealjs presentation_Toulouse.md -V theme=solarized -o presentation_Toulouse.html -->
+
+
+<!-- pandoc --slide-level 2 --toc --toc-depth=1 -t beamer presentation_Toulouse.md -V theme:Montpellier -o presentation_Toulouse.pdf -->
+
+
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: 'solarized', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>
