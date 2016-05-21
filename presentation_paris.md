@@ -10,16 +10,15 @@ motivation
 ----------
 
 - health care costs increase rapidly in many countries
-
 - some countries introduced private health insurers to bargain with providers in order to
 
     - keep costs down
     - reward quality
 
+- insurers choose the providers they want to contract with
 - ideally insurers exclude providers that are too expensive/offer too low quality
-
 - policy concern that insurers choose narrow networks which induce under-treatment (NYT, July 2014; LA Times Sept. 2013)
-
+- main question: can narrow networks lead to under-treatment?
 
 evidence
 --------
@@ -69,16 +68,14 @@ private contracts
 questions
 ---------
 
+- due to insurance, moral hazard causes over-consumption of health care
 - capitation fee as supply side cost sharing
 
     - fee-for-service below treatment cost
     - how is this combined with provider choice?
+	- why not set the fee-for-service to get efficient treatment?
     - why is demand side cost sharing used?
-
-- higher fee-for-service makes provider more willing to treat
-
-    - how can this be signalled to insured?
-    - what are effects of AWP laws?
+	- relation with network size
 
 
 literature
@@ -168,8 +165,6 @@ other effects
 - risk averse providers
 
 
-
-
 Private contracts
 =================
 
@@ -233,9 +228,19 @@ $$
 
 ---------
 
-- reduce provider profits by raising fee-for-service $p$ and reduce capitation $t$
-- hence bigger networks lead to less supply side cost sharing
-- and thus to higher health care utilization and costs
+- with one provider, minimize treatment costs: $p = 0, t=H(0,\gamma)c$
+
+    - insured cannot observe $p$
+	- premium does not depend on $p$
+    - by lowering $p$, cost decrease for insurer
+
+--------
+
+- as $n \geq 2$ increases
+- reduce capitation $t$ by raising fee-for-service $p$
+- bigger networks lead to less supply side cost sharing
+- thus to higher health care utilization and costs
+- trade off: higher $p$ leads to more treatments, but lower provider profits
 - with $n=2$, set $p_1=0,t_1=H(0,\gamma)c$ and
 
 $$
@@ -246,15 +251,20 @@ $$
 + H(p_2,\gamma)(c-p_2)
 $$
 
+
+---------
+
+![](images/examplecosts2.png)
+
+---------
+
+
+
 intuition
 ---------
 
 - as network size $n$ increases, supply side cost sharing becomes more expensive
-- with $n=1$, reduce treatment costs by setting $p=0,t=H(0,\gamma)c$
-
-    - insured cannot observe $p$
-	- premium does not depend on $p$
-
+- with $n=1$, reduce treatment costs by aggressive capitation contract
 - with $n \geq 2$, this becomes too expensive, as each provider requires $t=H(0,\gamma)c$
 - raise $p$ to reduce $t$
 - bigger network leads to more utilization and higher cost

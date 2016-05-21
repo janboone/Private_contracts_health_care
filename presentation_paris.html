@@ -30,14 +30,16 @@
 <section><section id="introduction" class="titleslide slide level1"><h1>Introduction</h1></section><section id="motivation" class="slide level2">
 <h1>motivation</h1>
 <ul>
-<li><p>health care costs increase rapidly in many countries</p></li>
+<li>health care costs increase rapidly in many countries</li>
 <li><p>some countries introduced private health insurers to bargain with providers in order to</p>
 <ul>
 <li>keep costs down</li>
 <li>reward quality</li>
 </ul></li>
-<li><p>ideally insurers exclude providers that are too expensive/offer too low quality</p></li>
-<li><p>policy concern that insurers choose narrow networks which induce under-treatment (NYT, July 2014; LA Times Sept. 2013)</p></li>
+<li>insurers choose the providers they want to contract with</li>
+<li>ideally insurers exclude providers that are too expensive/offer too low quality</li>
+<li>policy concern that insurers choose narrow networks which induce under-treatment (NYT, July 2014; LA Times Sept. 2013)</li>
+<li><p>main question: can narrow networks lead to under-treatment?</p></li>
 </ul>
 </section><section id="evidence" class="slide level2">
 <h1>evidence</h1>
@@ -82,16 +84,14 @@
 </section><section id="questions" class="slide level2">
 <h1>questions</h1>
 <ul>
+<li>due to insurance, moral hazard causes over-consumption of health care</li>
 <li><p>capitation fee as supply side cost sharing</p>
 <ul>
 <li>fee-for-service below treatment cost</li>
 <li>how is this combined with provider choice?</li>
+<li>why not set the fee-for-service to get efficient treatment?</li>
 <li>why is demand side cost sharing used?</li>
-</ul></li>
-<li><p>higher fee-for-service makes provider more willing to treat</p>
-<ul>
-<li>how can this be signalled to insured?</li>
-<li>what are effects of AWP laws?</li>
+<li>relation with network size</li>
 </ul></li>
 </ul>
 </section><section id="literature" class="slide level2">
@@ -239,9 +239,21 @@ H(p,\gamma)p+2H(p,\gamma)(c-p)=H(p,\gamma)c+H(p,\gamma)(c-p) &gt; H(p,\gamma)c
 </section><section class="slide level2">
 
 <ul>
-<li>reduce provider profits by raising fee-for-service <span class="math">\(p\)</span> and reduce capitation <span class="math">\(t\)</span></li>
-<li>hence bigger networks lead to less supply side cost sharing</li>
-<li>and thus to higher health care utilization and costs</li>
+<li><p>with one provider, minimize treatment costs: <span class="math">\(p = 0, t=H(0,\gamma)c\)</span></p>
+<ul>
+<li>insured cannot observe <span class="math">\(p\)</span></li>
+<li>premium does not depend on <span class="math">\(p\)</span></li>
+<li>by lowering <span class="math">\(p\)</span>, cost decrease for insurer</li>
+</ul></li>
+</ul>
+</section><section class="slide level2">
+
+<ul>
+<li>as <span class="math">\(n \geq 2\)</span> increases</li>
+<li>reduce capitation <span class="math">\(t\)</span> by raising fee-for-service <span class="math">\(p\)</span></li>
+<li>bigger networks lead to less supply side cost sharing</li>
+<li>thus to higher health care utilization and costs</li>
+<li>trade off: higher <span class="math">\(p\)</span> leads to more treatments, but lower provider profits</li>
 <li>with <span class="math">\(n=2\)</span>, set <span class="math">\(p_1=0,t_1=H(0,\gamma)c\)</span> and</li>
 </ul>
 <p><span class="math">\[
@@ -250,15 +262,16 @@ C(n,\gamma) = \min_{p_2} H(0,\gamma)(c-\gamma) +
 \]</span> <span class="math">\[
 + H(p_2,\gamma)(c-p_2)
 \]</span></p>
+</section><section class="slide level2">
+
+<figure>
+<img src="images/examplecosts2.png" />
+</figure>
 </section><section id="intuition" class="slide level2">
 <h1>intuition</h1>
 <ul>
 <li>as network size <span class="math">\(n\)</span> increases, supply side cost sharing becomes more expensive</li>
-<li><p>with <span class="math">\(n=1\)</span>, reduce treatment costs by setting <span class="math">\(p=0,t=H(0,\gamma)c\)</span></p>
-<ul>
-<li>insured cannot observe <span class="math">\(p\)</span></li>
-<li>premium does not depend on <span class="math">\(p\)</span></li>
-</ul></li>
+<li>with <span class="math">\(n=1\)</span>, reduce treatment costs by aggressive capitation contract</li>
 <li>with <span class="math">\(n \geq 2\)</span>, this becomes too expensive, as each provider requires <span class="math">\(t=H(0,\gamma)c\)</span></li>
 <li>raise <span class="math">\(p\)</span> to reduce <span class="math">\(t\)</span></li>
 <li>bigger network leads to more utilization and higher cost</li>
